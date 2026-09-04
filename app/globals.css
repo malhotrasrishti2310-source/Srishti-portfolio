@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
 @theme {
+  --color-burgundy: #5a172d;
+  --color-burgundy-deep: #421021;
+  --color-cream: #fff8f0;
+  --color-pink-light: #f3b1b0;
+}
+
+@theme {
   --font-serif: var(--font-instrument-serif), Georgia, Cambria, "Times New Roman", Times, serif;
   --font-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
