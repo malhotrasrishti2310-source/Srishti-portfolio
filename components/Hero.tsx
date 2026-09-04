@@ -33,7 +33,7 @@ export default function Hero() {
                 View My Projects
               </a>
 
-            <a
+          <a
   href="#contact"
   className="rounded-full border-2 border-[#5a172d] bg-transparent px-7 py-3.5 font-medium !text-[#5a172d] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#5a172d] hover:!text-[#fff8f0] hover:shadow-lg dark:border-[#f3b1b0] dark:bg-transparent dark:!text-[#f3b1b0] dark:hover:bg-[#5a172d] dark:hover:!text-[#fff8f0]"
 >
