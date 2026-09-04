@@ -1,0 +1,217 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-instrument-serif), Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-cream: #fff8f0;
+  --color-cream-dark: #fdf0e4;
+  --color-white: #ffffff;
+
+  --color-pink: #df7d82;
+  --color-pink-light: #f3b1b0;
+  --color-pink-pale: #f9dedd;
+
+  --color-burgundy: #5a172d;
+  --color-burgundy-light: #7a3047;
+  --color-burgundy-dark: #320a17;
+  --color-burgundy-deep: #1a050c;
+
+  --color-text: #4b3940;
+  --color-muted: #806f74;
+}
+
+:root {
+  --cream: #fff8f0;
+  --cream-dark: #fdf0e4;
+  --white: #ffffff;
+
+  --pink: #df7d82;
+  --pink-light: #f3b1b0;
+  --pink-pale: #f9dedd;
+
+  --burgundy: #5a172d;
+  --burgundy-light: #7a3047;
+  --burgundy-dark: #320a17;
+  --burgundy-deep: #1a050c;
+
+  --text: #4b3940;
+  --muted: #806f74;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  color: var(--burgundy);
+  letter-spacing: -0.01em;
+}
+
+.font-serif {
+  font-family: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
+}
+
+.font-sans {
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+p {
+  color: var(--text);
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+#about {
+  background: var(--white);
+}
+
+#skills {
+  background: var(--cream-dark);
+}
+
+#projects {
+  background: var(--white);
+}
+
+#experience {
+  background: var(--cream-dark);
+}
+
+#contact {
+  background: var(--white);
+}
+
+/* Dark Theme Variables & Adjustments */
+.dark {
+  --cream: #0e0a0d;
+  --cream-dark: #150f14;
+  --white: #1b1319;
+
+  --pink: #f3b1b0;
+  --pink-light: #f9dedd;
+  --pink-pale: #361722;
+
+  --burgundy: #f7cac9;
+  --burgundy-light: #fdedec;
+  --burgundy-dark: #f3b1b0;
+  --burgundy-deep: #2a111b;
+
+  --text: #f5ebe6;
+  --muted: #a8949c;
+}
+
+.dark #about {
+  background: var(--cream);
+}
+
+.dark #skills {
+  background: var(--cream-dark);
+}
+
+.dark #projects {
+  background: var(--cream);
+}
+
+.dark #experience {
+  background: var(--cream-dark);
+}
+
+.dark #contact {
+  background: var(--cream);
+}
+
+.dark article,
+.dark .border {
+  border-color: rgba(243, 177, 176, 0.15);
+}
+
+/* Scroll Reveal Animations */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-init {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Marquee Scroll Animations for Technologies */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 32s linear infinite;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marquee-right 32s linear infinite;
+}
+
+.animate-marquee-left:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
+/* Hide scrollbars while keeping scroll functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
