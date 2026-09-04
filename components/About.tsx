@@ -1,4 +1,6 @@
 import ScrollReveal from "@/components/ScrollReveal";
+import Reveal from "@/components/animations/Reveal";
+import TextReveal from "@/components/animations/TextReveal";
 
 export default function About() {
   return (
@@ -12,18 +14,21 @@ export default function About() {
             About Me
           </p>
 
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal tracking-tight">
-            A little bit about me
-          </h2>
+          <TextReveal>
+  <h2 className="text-4xl font-bold md:text-5xl">
+    A little bit about me
+  </h2>
+</TextReveal>
         </ScrollReveal>
 
         <ScrollReveal delay={150}>
-          <p className="mt-8 font-sans text-base sm:text-lg leading-relaxed text-muted">
-            I'm Srishti Malhotra, a Computer Science student who enjoys
-            building projects, learning new technologies, and exploring
-            different areas of software development.
-          </p>
-
+          <Reveal delay={0.2}>
+  <p className="mt-8 text-lg leading-8">
+    I'm Srishti Malhotra, a Computer Science student who enjoys
+    building projects, learning new technologies, and exploring
+    different areas of software development.
+  </p>
+</Reveal>
           <p className="mt-5 font-sans text-base sm:text-lg leading-relaxed text-muted">
             I'm currently developing my skills in programming, web
             development, and software engineering while working on
