@@ -28,14 +28,14 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap gap-4 font-sans text-sm font-medium">
               <a
                 href="#projects"
-                className="rounded-full border-2 border-burgundy bg-burgundy px-7 py-3.5 font-medium text-cream shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-burgundy-deep hover:bg-burgundy-deep hover:text-white hover:shadow-lg dark:border-white/20 dark:bg-white/5 dark:text-cream dark:hover:border-pink-light dark:hover:bg-burgundy dark:hover:text-white"
+                className="rounded-full border-2 border-[#5a172d] bg-[#5a172d] px-7 py-3.5 font-medium text-[#fff8f0] shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-[#421021] hover:shadow-lg dark:border-[#f3b1b0] dark:bg-[#5a172d] dark:text-[#fff8f0] dark:hover:bg-[#7a3047]"
               >
                 View My Projects
               </a>
 
               <a
                 href="#contact"
-                className="rounded-full border-2 border-burgundy bg-transparent px-7 py-3.5 font-medium text-burgundy shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-burgundy hover:text-cream hover:shadow-lg dark:border-white/20 dark:bg-white/5 dark:text-cream dark:hover:border-pink-light dark:hover:bg-burgundy dark:hover:text-white"
+                className="rounded-full border-2 border-[#5a172d] bg-transparent px-7 py-3.5 font-medium text-[#5a172d] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#5a172d] hover:text-[#fff8f0] hover:shadow-lg dark:border-[#f3b1b0] dark:bg-transparent dark:text-[#fff8f0] dark:hover:bg-[#5a172d] dark:hover:text-white"
               >
                 Contact Me
               </a>
