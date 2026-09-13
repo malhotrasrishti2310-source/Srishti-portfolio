@@ -13,7 +13,7 @@ const projects = [
     description:
       "A personal portfolio website built to showcase my projects, skills, experience, and journey as a Computer Science student.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/malhotrasrishti2310-source",
+    github: "https://srishti-portfolio-phi.vercel.app/",
   },
   {
     title: "Sample Portfolio Website",
