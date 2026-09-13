@@ -6,7 +6,7 @@ const projects = [
     description:
       "A field-based project studying air pollution, water pollution, garbage disposal, and practical waste-management solutions in a rural community.",
     technologies: ["HTML", "Research", "Data Analysis"],
-    github: "#",
+    github: "https://github.com/malhotrasrishti2310-source",
   },
   {
     title: "Developer Portfolio",
